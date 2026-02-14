@@ -1,0 +1,6 @@
+configure device type disk parallelism 3;
+configure channel 1 device type disk format '/u01/O12C/rman/rman1_%U.bk';
+configure channel 2 device type disk format '/u01/O12C/rman/rman2_%U.bk';
+configure channel 3 device type disk format '/u01/O12C/rman/rman3_%U.bk';
+
+backup database;

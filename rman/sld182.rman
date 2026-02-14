@@ -1,0 +1,4 @@
+configure device type disk parallelism 2;
+configure channel 1 device type disk format '/u01/O12C/rman/r1_%U.bk';
+configure channel 2 device type disk format '/u02/O12C/rman/r2_%U.bk';
+backup section size 30M datafile 5;
